@@ -1,0 +1,466 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  box-sizing: border-box;
+}
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* common */
+.row {
+  margin-right: -8px;
+  margin-left: -8px;
+}
+.col-third {
+  width: 33.33333%;
+}
+.col-haft {
+  width: 50%;
+}
+.clear {
+  clear: both;
+}
+.text-color {
+  color: #fff !important;
+}
+.text-center {
+  text-align: center !important;
+}
+
+/* begin header */
+#header {
+  width: 100%;
+  height: 46.5px;
+  background-color: black;
+  display: inline-block;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+}
+#nav {
+  display: inline-block;
+}
+#nav > li {
+  display: inline-block;
+  line-height: 46.5px;
+}
+#nav > li:hover > a {
+  color: black;
+  background-color: #ccc;
+}
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+#nav li a {
+  line-height: 46.5px;
+  text-decoration: none;
+  font-size: 15px;
+
+  display: inline-block;
+  padding: 0px 16px;
+}
+#nav li {
+  position: relative;
+}
+#nav .subnav {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  color: black;
+}
+#nav li:hover .subnav {
+  display: block;
+  list-style: none;
+  min-width: 160px;
+  z-index: 1;
+}
+#nav .subnav li:hover {
+  color: black;
+  background-color: #ccc;
+}
+#nav .subnav a {
+  color: black;
+}
+
+#header .mobile-menu-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+#header .mobile-menu-btn,
+#header .search-btn {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  float: right;
+}
+#header .search-btn:hover {
+  background-color: red;
+}
+#header .mobile-menu-btn:hover {
+  background-color: #ccc;
+  color: #000;
+}
+#header .mobile-menu-btn,
+#header .search-icon {
+  line-height: 46.5px;
+  padding: 0px 21px;
+}
+/* #header #nav li:last-child {
+  margin-right: 700px;
+} */
+
+/* #slider {
+  margin-top: 46.5px;
+  padding-top: 50%;
+  background: url(../imgs/slider2.jpg) center top / cover no-repeat;
+  position: relative;
+}
+#slider .text-slider {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  bottom: 48px;
+  text-shadow: 0 0 1px #000;
+}
+#slider .text-heading {
+  font-weight: 500;
+  font-size: 24px;
+}
+#slider .text-description {
+  margin-top: 25px;
+  font-size: 15px;
+} */
+
+#slider {
+  margin-top: 46.5px;
+  padding-top: 50%;
+  position: relative;
+}
+#slider .slider-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+#slider .text-slider {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  bottom: 48px;
+  text-shadow: 0 0 1px #000;
+}
+#slider .text-heading {
+  font-weight: 500;
+  font-size: 24px;
+}
+#slider .text-description {
+  margin-top: 25px;
+  font-size: 15px;
+  font-weight: 700;
+}
+*/
+
+/* contain */
+#contain {
+}
+#contain .contain-section {
+  width: 800px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 0;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#contain .contain-section .section-heading {
+  font-weight: 500;
+  letter-spacing: 4px;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+#contain .contain-section .section-sub-heading {
+  opacity: 0.6;
+  font-style: italic;
+  font-size: 15px;
+}
+.contain-section .about-text {
+  text-align: justify;
+  margin-top: 30px;
+  line-height: 1.4;
+  font-size: 15px;
+}
+
+.member-band .member-list {
+  float: left;
+  padding: 32px 0;
+  margin-top: 15px;
+}
+
+.member-band .member-item {
+  width: 154px;
+  border-radius: 4px;
+}
+.member-list .band-name {
+  font-size: 15px;
+  margin: 15px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tour-secstion {
+  background-color: #000;
+}
+.tour-secstion .img-tickets:hover {
+  opacity: 0.5;
+}
+.tour-secstion .tickets-book {
+  margin-top: 48px;
+}
+.tickets-book li {
+  color: #757575;
+  list-style: none;
+  font-size: 15px;
+  padding: 8px 16px;
+  border-bottom: solid 1px;
+  background-color: #fff;
+}
+.tickets-book .sold-out {
+  background-color: #f44336;
+  color: #fff;
+  padding: 3px 4px;
+  margin-left: 16px;
+}
+.tickets-book .quantity {
+  float: right;
+  background-color: #000;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  margin-top: -2px;
+}
+
+.place-tickets {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.place-tickets .tickets {
+  padding: 0 8px;
+}
+.place-tickets .place-content {
+  background-color: #fff;
+  padding: 8px 16px;
+}
+.place-content .info-ticket {
+  font-size: 15px;
+  margin: 15px 0;
+}
+.place-content .date-ticket {
+  margin: 15px 0;
+  font-size: 15px;
+  opacity: 0.8;
+}
+.place-content .content-ticket {
+  margin: 15px 0;
+  font-size: 15px;
+  line-height: 1.4;
+}
+.place-content .buy-ticket {
+  padding: 8px 16px;
+  background-color: black;
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+.place-content .buy-ticket:hover {
+  color: #000 !important;
+  background-color: #ccc !important;
+  cursor: pointer;
+}
+.img-tickets {
+  width: 100%;
+  display: block;
+}
+.modal-tickets {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  display: none;
+  z-index: 1;
+}
+.modal-tickets.open {
+  display: flex;
+}
+.modal-tickets .modal-container {
+  background-color: #fff;
+  position: relative;
+  width: 900px;
+  min-height: 200px;
+  animation: showModal ease 0.4s;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 16px;
+}
+.modal-close:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+.modal-header {
+  background-color: #009688;
+  text-align: center;
+  padding: 32px 16px;
+  font-size: 30px;
+  color: #fff;
+}
+.modal-header i {
+  margin-right: 14px;
+  font-size: 15px;
+}
+.modal-container .modal-body {
+  padding: 0 16px;
+}
+.modal-body .modal-label {
+  display: block;
+  margin: 15px 0;
+  font-size: 15px;
+}
+.modal-body .modal-input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline-color: cornflowerblue;
+}
+.modal-pay {
+  width: 100%;
+  background-color: #009688;
+  padding: 16px;
+  margin: 16px 0;
+  color: #fff;
+  font-size: 16px;
+}
+.modal-pay:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+.modal-pay i {
+  margin-left: 3px;
+}
+.modal-footer {
+  padding: 0 16px;
+  margin: 15px 0;
+  text-align: right;
+}
+.modal-help {
+  margin-left: 3px;
+  color: #2196f3;
+}
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+.contact-info {
+  text-align: left;
+}
+.contact-info a {
+  color: #101aef;
+  opacity: 0.8;
+}
+.contact-info a:hover {
+  opacity: 1;
+}
+.contact-info i[class*="ti-"] {
+  width: 30px;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 700;
+}
+.contact-info p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+.form-email_input input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  outline-color: cornflowerblue;
+  font-size: 16px;
+}
+.form-message input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  outline-color: cornflowerblue;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.contact-form .submit {
+  padding: 8px 16px;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  float: right;
+  font-size: 15px;
+}
+.contact-form .submit:hover {
+  color: #000 !important;
+  background-color: #ccc !important;
+}
+#footer {
+}
+
+@keyframes showModal {
+  from {
+    transform: translateY(-130px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.map-web-site .img-map {
+  filter: grayscale(50%);
+  width: 100%;
+  height: auto;
+}
+.map-web-site .icon-map {
+  text-align: center;
+  margin: 64px 0;
+  font-size: 20px;
+  opacity: 0.6ss;
+}
+.map-web-site .icon-map i:hover {
+  opacity: 0.5;
+}
+.map-web-site .description-icon-map {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 15px;
+  opacity: 0.8;
+}
+.map-web-site .description-icon-map .name-power-by {
+  color: #000;
+}
